@@ -975,7 +975,18 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a href="https://github.com/uci-ml-repo/ucimlrepo">Documentation</a></p>
+<p><a href="https://github.com/uci-ml-repo/ucimlrepo" rel="noopener noreferrer" target="_blank">Documentation</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9b27ac21">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><a href="https://archive.ics.uci.edu/dataset/53/iris" rel="noopener noreferrer" target="_blank">Iris Dataset</a></p>
 </div>
 </div>
 </div>
@@ -985,7 +996,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy for="cell-1">
@@ -1001,7 +1012,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">ucimlrepo</span><span class="w"> </span><span class="kn">import</span> <span class="n">fetch_ucirepo</span> 
   
 <span class="c1"># fetch dataset </span>
-<span class="n">iris</span> <span class="o">=</span> <span class="n">fetch_ucirepo</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">53</span><span class="p">)</span> <span class="c1"># https://archive.ics.uci.edu/dataset/53/iris</span>
+<span class="n">iris</span> <span class="o">=</span> <span class="n">fetch_ucirepo</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">53</span><span class="p">)</span>
   
 <span class="c1"># data (as pandas dataframes) </span>
 <span class="n">X</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">features</span> 
@@ -1016,7 +1027,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <div class="clipboard-copy-txt" id="cell-1">from ucimlrepo import fetch_ucirepo 
   
 # fetch dataset 
-iris = fetch_ucirepo(id=53) # https://archive.ics.uci.edu/dataset/53/iris
+iris = fetch_ucirepo(id=53)
   
 # data (as pandas dataframes) 
 X = iris.data.features 
@@ -1098,6 +1109,17 @@ print(iris.variables)
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=af44a540">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><a href="https://archive.ics.uci.edu/dataset/45/heart+disease" rel="noopener noreferrer" target="_blank">Heart disease dataset</a></p>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=04a17af3">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -1120,7 +1142,7 @@ print(iris.variables)
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">ucimlrepo</span><span class="w"> </span><span class="kn">import</span> <span class="n">fetch_ucirepo</span> 
   
 <span class="c1"># fetch dataset </span>
-<span class="n">heart_disease</span> <span class="o">=</span> <span class="n">fetch_ucirepo</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span> <span class="c1"># https://archive.ics.uci.edu/dataset/45/heart+disease</span>
+<span class="n">heart_disease</span> <span class="o">=</span> <span class="n">fetch_ucirepo</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
   
 <span class="c1"># data (as pandas dataframes) </span>
 <span class="n">X</span> <span class="o">=</span> <span class="n">heart_disease</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">features</span> 
@@ -1135,7 +1157,7 @@ print(iris.variables)
 <div class="clipboard-copy-txt" id="cell-3">from ucimlrepo import fetch_ucirepo 
   
 # fetch dataset 
-heart_disease = fetch_ucirepo(id=45) # https://archive.ics.uci.edu/dataset/45/heart+disease
+heart_disease = fetch_ucirepo(id=45)
   
 # data (as pandas dataframes) 
 X = heart_disease.data.features 

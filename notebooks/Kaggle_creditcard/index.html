@@ -1065,6 +1065,17 @@ print(f"Credenciais gravadas com segurança em: {kaggle_json}")</div>
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a78c5e8d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><a href="https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud" rel="noopener noreferrer" target="_blank">Credit card fraud</a></p>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=17212d1c">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -1084,9 +1095,7 @@ print(f"Credenciais gravadas com segurança em: {kaggle_json}")</div>
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud</span>
-
-<span class="kn">from</span><span class="w"> </span><span class="nn">kaggle.api.kaggle_api_extended</span><span class="w"> </span><span class="kn">import</span> <span class="n">KaggleApi</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">kaggle.api.kaggle_api_extended</span><span class="w"> </span><span class="kn">import</span> <span class="n">KaggleApi</span>
 
 <span class="n">api</span> <span class="o">=</span> <span class="n">KaggleApi</span><span class="p">()</span>
 <span class="n">api</span><span class="o">.</span><span class="n">authenticate</span><span class="p">()</span>  <span class="c1"># usa ~/.kaggle/kaggle.json ou env vars</span>
@@ -1098,9 +1107,7 @@ print(f"Credenciais gravadas com segurança em: {kaggle_json}")</div>
     <span class="n">unzip</span><span class="o">=</span><span class="kc">True</span>
 <span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-2"># https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
-
-from kaggle.api.kaggle_api_extended import KaggleApi
+<div class="clipboard-copy-txt" id="cell-2">from kaggle.api.kaggle_api_extended import KaggleApi
 
 api = KaggleApi()
 api.authenticate()  # usa ~/.kaggle/kaggle.json ou env vars
