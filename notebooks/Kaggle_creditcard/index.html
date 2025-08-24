@@ -13,10 +13,8 @@
       
       
       
-        <link rel="prev" href="../../fontes_consulta/">
+        <link rel="prev" href="../Kaggle_geral/">
       
-      
-        <link rel="next" href="../Kaggle_geral/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +22,7 @@
     
     
       
-        <title>UCI database - Estudos de Rafael Marinho Ferreira em databases</title>
+        <title>Kaggle credit card - Estudos de Rafael Marinho Ferreira em databases</title>
       
     
     
@@ -107,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              UCI database
+              Kaggle credit card
             
           </span>
         </div>
@@ -242,7 +240,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../UCI/" class="md-tabs__link">
           
   
   Notebooks
@@ -375,17 +373,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../UCI/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -394,7 +385,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -404,6 +394,8 @@
                 
   
   
+    
+  
   
   
     
@@ -418,11 +410,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="">
@@ -436,7 +428,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             Kaggle
@@ -468,10 +460,17 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../Kaggle_creditcard/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -480,6 +479,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -531,7 +531,7 @@
                   
 
 
-  <h1>UCI database</h1>
+  <h1>Kaggle credit card</h1>
 
 <script>
 (function (global, factory) {
@@ -969,23 +969,13 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </style>
 <!-- End of mermaid configuration --><div class="jupyter-wrapper">
 <div class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d2e87727">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a href="https://github.com/uci-ml-repo/ucimlrepo">Documentation</a></p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=88d75590">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=8eefb5c5">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy for="cell-1">
@@ -998,36 +988,65 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">ucimlrepo</span><span class="w"> </span><span class="kn">import</span> <span class="n">fetch_ucirepo</span> 
-  
-<span class="c1"># fetch dataset </span>
-<span class="n">iris</span> <span class="o">=</span> <span class="n">fetch_ucirepo</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">53</span><span class="p">)</span> <span class="c1"># https://archive.ics.uci.edu/dataset/53/iris</span>
-  
-<span class="c1"># data (as pandas dataframes) </span>
-<span class="n">X</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">features</span> 
-<span class="n">y</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">targets</span> 
-  
-<span class="c1"># metadata </span>
-<span class="nb">print</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">metadata</span><span class="p">)</span> 
-  
-<span class="c1"># variable information </span>
-<span class="nb">print</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">variables</span><span class="p">)</span> 
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">getpass</span><span class="w"> </span><span class="kn">import</span> <span class="n">getpass</span>
+
+<span class="c1"># 2.1) Captura "secreta" (entrada não é exibida)</span>
+<span class="n">username</span> <span class="o">=</span> <span class="n">getpass</span><span class="p">(</span><span class="s2">"Kaggle username: "</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+<span class="n">api_key</span>  <span class="o">=</span> <span class="n">getpass</span><span class="p">(</span><span class="s2">"Kaggle API key: "</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+<span class="c1"># 2.2) Diretório ~/.kaggle no HOME do usuário atual (portável, inclusive em Databricks)</span>
+<span class="n">kaggle_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="o">.</span><span class="n">home</span><span class="p">()</span> <span class="o">/</span> <span class="s2">".kaggle"</span>
+<span class="n">kaggle_dir</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># 2.3) Caminho do arquivo de credenciais</span>
+<span class="n">kaggle_json</span> <span class="o">=</span> <span class="n">kaggle_dir</span> <span class="o">/</span> <span class="s2">"kaggle.json"</span>
+
+<span class="c1"># 2.4) Escreve as credenciais no JSON</span>
+<span class="n">creds</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"username"</span><span class="p">:</span> <span class="n">username</span><span class="p">,</span> <span class="s2">"key"</span><span class="p">:</span> <span class="n">api_key</span><span class="p">}</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">kaggle_json</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">creds</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
+
+<span class="c1"># 2.5) Permissões: 600 em sistemas tipo Unix (Linux/macOS/WSL/Databricks)</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">chmod</span><span class="p">(</span><span class="n">kaggle_json</span><span class="p">,</span> <span class="mo">0o600</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="c1"># Em Windows puro, chmod pode não aplicar do mesmo modo — este aviso é esperado</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Aviso: não foi possível aplicar chmod 600 (</span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">). Em Windows isso é esperado."</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Credenciais gravadas com segurança em: </span><span class="si">{</span><span class="n">kaggle_json</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-1">from ucimlrepo import fetch_ucirepo 
-  
-# fetch dataset 
-iris = fetch_ucirepo(id=53) # https://archive.ics.uci.edu/dataset/53/iris
-  
-# data (as pandas dataframes) 
-X = iris.data.features 
-y = iris.data.targets 
-  
-# metadata 
-print(iris.metadata) 
-  
-# variable information 
-print(iris.variables) 
-</div>
+<div class="clipboard-copy-txt" id="cell-1">import os
+import json
+from pathlib import Path
+from getpass import getpass
+
+# 2.1) Captura "secreta" (entrada não é exibida)
+username = getpass("Kaggle username: ").strip()
+api_key  = getpass("Kaggle API key: ").strip()
+
+# 2.2) Diretório ~/.kaggle no HOME do usuário atual (portável, inclusive em Databricks)
+kaggle_dir = Path.home() / ".kaggle"
+kaggle_dir.mkdir(parents=True, exist_ok=True)
+
+# 2.3) Caminho do arquivo de credenciais
+kaggle_json = kaggle_dir / "kaggle.json"
+
+# 2.4) Escreve as credenciais no JSON
+creds = {"username": username, "key": api_key}
+with open(kaggle_json, "w") as f:
+    json.dump(creds, f)
+
+# 2.5) Permissões: 600 em sistemas tipo Unix (Linux/macOS/WSL/Databricks)
+try:
+    os.chmod(kaggle_json, 0o600)
+except Exception as e:
+    # Em Windows puro, chmod pode não aplicar do mesmo modo — este aviso é esperado
+    print(f"Aviso: não foi possível aplicar chmod 600 ({e}). Em Windows isso é esperado.")
+
+print(f"Credenciais gravadas com segurança em: {kaggle_json}")</div>
 </div>
 </div>
 </div>
@@ -1039,20 +1058,7 @@ print(iris.variables)
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>{'uci_id': 53, 'name': 'Iris', 'repository_url': 'https://archive.ics.uci.edu/dataset/53/iris', 'data_url': 'https://archive.ics.uci.edu/static/public/53/data.csv', 'abstract': 'A small classic dataset from Fisher, 1936. One of the earliest known datasets used for evaluating classification methods.\n', 'area': 'Biology', 'tasks': ['Classification'], 'characteristics': ['Tabular'], 'num_instances': 150, 'num_features': 4, 'feature_types': ['Real'], 'demographics': [], 'target_col': ['class'], 'index_col': None, 'has_missing_values': 'no', 'missing_values_symbol': None, 'year_of_dataset_creation': 1936, 'last_updated': 'Tue Sep 12 2023', 'dataset_doi': '10.24432/C56C76', 'creators': ['R. A. Fisher'], 'intro_paper': {'ID': 191, 'type': 'NATIVE', 'title': 'The Iris data set: In search of the source of virginica', 'authors': 'A. Unwin, K. Kleinman', 'venue': 'Significance, 2021', 'year': 2021, 'journal': 'Significance, 2021', 'DOI': '1740-9713.01589', 'URL': 'https://www.semanticscholar.org/paper/4599862ea877863669a6a8e63a3c707a787d5d7e', 'sha': None, 'corpus': None, 'arxiv': None, 'mag': None, 'acl': None, 'pmid': None, 'pmcid': None}, 'additional_info': {'summary': 'This is one of the earliest datasets used in the literature on classification methods and widely used in statistics and machine learning.  The data set contains 3 classes of 50 instances each, where each class refers to a type of iris plant.  One class is linearly separable from the other 2; the latter are not linearly separable from each other.\n\nPredicted attribute: class of iris plant.\n\nThis is an exceedingly simple domain.\n\nThis data differs from the data presented in Fishers article (identified by Steve Chadwick,  spchadwick@espeedaz.net ).  The 35th sample should be: 4.9,3.1,1.5,0.2,"Iris-setosa" where the error is in the fourth feature. The 38th sample: 4.9,3.6,1.4,0.1,"Iris-setosa" where the errors are in the second and third features.  ', 'purpose': 'N/A', 'funded_by': None, 'instances_represent': 'Each instance is a plant', 'recommended_data_splits': None, 'sensitive_data': None, 'preprocessing_description': None, 'variable_info': None, 'citation': None}}
-           name     role         type demographic  \
-0  sepal length  Feature   Continuous        None   
-1   sepal width  Feature   Continuous        None   
-2  petal length  Feature   Continuous        None   
-3   petal width  Feature   Continuous        None   
-4         class   Target  Categorical        None   
-
-                                         description units missing_values  
-0                                               None    cm             no  
-1                                               None    cm             no  
-2                                               None    cm             no  
-3                                               None    cm             no  
-4  class of iris plant: Iris Setosa, Iris Versico...  None             no  
+<pre>Credenciais gravadas com segurança em: /root/.kaggle/kaggle.json
 </pre>
 </div>
 </div>
@@ -1060,12 +1066,12 @@ print(iris.variables)
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=57d34311">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=17212d1c">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy for="cell-2">
@@ -1078,9 +1084,33 @@ print(iris.variables)
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">iris</span><span class="p">[</span><span class="s2">"data"</span><span class="p">][</span><span class="s2">"original"</span><span class="p">])</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">kaggle.api.kaggle_api_extended</span><span class="w"> </span><span class="kn">import</span> <span class="n">KaggleApi</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">KaggleApi</span><span class="p">()</span>
+<span class="n">api</span><span class="o">.</span><span class="n">authenticate</span><span class="p">()</span>  <span class="c1"># usa ~/.kaggle/kaggle.json ou env vars</span>
+
+<span class="c1"># Exemplo: baixar e descompactar um dataset</span>
+<span class="n">api</span><span class="o">.</span><span class="n">dataset_download_files</span><span class="p">(</span>
+    <span class="n">dataset</span><span class="o">=</span><span class="s2">"mlg-ulb/creditcardfraud"</span><span class="p">,</span>  <span class="c1"># owner/slug</span>
+    <span class="n">path</span><span class="o">=</span><span class="s2">"dados_kaggle"</span><span class="p">,</span>
+    <span class="n">unzip</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-2">type(iris["data"]["original"])</div>
+<div class="clipboard-copy-txt" id="cell-2"># https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+
+from kaggle.api.kaggle_api_extended import KaggleApi
+
+api = KaggleApi()
+api.authenticate()  # usa ~/.kaggle/kaggle.json ou env vars
+
+# Exemplo: baixar e descompactar um dataset
+api.dataset_download_files(
+    dataset="mlg-ulb/creditcardfraud",  # owner/slug
+    path="dados_kaggle",
+    unzip=True
+)</div>
 </div>
 </div>
 </div>
@@ -1089,22 +1119,23 @@ print(iris.variables)
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[26]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>pandas.core.frame.DataFrame</pre>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Dataset URL: https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+</pre>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=04a17af3">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=b337ccee">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy for="cell-3">
@@ -1117,35 +1148,13 @@ print(iris.variables)
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">ucimlrepo</span><span class="w"> </span><span class="kn">import</span> <span class="n">fetch_ucirepo</span> 
-  
-<span class="c1"># fetch dataset </span>
-<span class="n">heart_disease</span> <span class="o">=</span> <span class="n">fetch_ucirepo</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span> <span class="c1"># https://archive.ics.uci.edu/dataset/45/heart+disease</span>
-  
-<span class="c1"># data (as pandas dataframes) </span>
-<span class="n">X</span> <span class="o">=</span> <span class="n">heart_disease</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">features</span> 
-<span class="n">y</span> <span class="o">=</span> <span class="n">heart_disease</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">targets</span> 
-  
-<span class="c1"># metadata </span>
-<span class="nb">print</span><span class="p">(</span><span class="n">heart_disease</span><span class="o">.</span><span class="n">metadata</span><span class="p">)</span> 
-  
-<span class="c1"># variable information </span>
-<span class="nb">print</span><span class="p">(</span><span class="n">heart_disease</span><span class="o">.</span><span class="n">variables</span><span class="p">)</span> 
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"dados_kaggle/creditcard.csv"</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-3">from ucimlrepo import fetch_ucirepo 
-  
-# fetch dataset 
-heart_disease = fetch_ucirepo(id=45) # https://archive.ics.uci.edu/dataset/45/heart+disease
-  
-# data (as pandas dataframes) 
-X = heart_disease.data.features 
-y = heart_disease.data.targets 
-  
-# metadata 
-print(heart_disease.metadata) 
-  
-# variable information 
-print(heart_disease.variables) </div>
+<div class="clipboard-copy-txt" id="cell-3">import pandas as pd
+
+pd.read_csv("dados_kaggle/creditcard.csv")</div>
 </div>
 </div>
 </div>
@@ -1154,54 +1163,331 @@ print(heart_disease.variables) </div>
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>{'uci_id': 45, 'name': 'Heart Disease', 'repository_url': 'https://archive.ics.uci.edu/dataset/45/heart+disease', 'data_url': 'https://archive.ics.uci.edu/static/public/45/data.csv', 'abstract': '4 databases: Cleveland, Hungary, Switzerland, and the VA Long Beach', 'area': 'Health and Medicine', 'tasks': ['Classification'], 'characteristics': ['Multivariate'], 'num_instances': 303, 'num_features': 13, 'feature_types': ['Categorical', 'Integer', 'Real'], 'demographics': ['Age', 'Sex'], 'target_col': ['num'], 'index_col': None, 'has_missing_values': 'yes', 'missing_values_symbol': 'NaN', 'year_of_dataset_creation': 1989, 'last_updated': 'Fri Nov 03 2023', 'dataset_doi': '10.24432/C52P4X', 'creators': ['Andras Janosi', 'William Steinbrunn', 'Matthias Pfisterer', 'Robert Detrano'], 'intro_paper': {'ID': 231, 'type': 'NATIVE', 'title': 'International application of a new probability algorithm for the diagnosis of coronary artery disease.', 'authors': 'R. Detrano, A. Jánosi, W. Steinbrunn, M. Pfisterer, J. Schmid, S. Sandhu, K. Guppy, S. Lee, V. Froelicher', 'venue': 'American Journal of Cardiology', 'year': 1989, 'journal': None, 'DOI': None, 'URL': 'https://www.semanticscholar.org/paper/a7d714f8f87bfc41351eb5ae1e5472f0ebbe0574', 'sha': None, 'corpus': None, 'arxiv': None, 'mag': None, 'acl': None, 'pmid': '2756873', 'pmcid': None}, 'additional_info': {'summary': 'This database contains 76 attributes, but all published experiments refer to using a subset of 14 of them.  In particular, the Cleveland database is the only one that has been used by ML researchers to date.  The "goal" field refers to the presence of heart disease in the patient.  It is integer valued from 0 (no presence) to 4. Experiments with the Cleveland database have concentrated on simply attempting to distinguish presence (values 1,2,3,4) from absence (value 0).  \n   \nThe names and social security numbers of the patients were recently removed from the database, replaced with dummy values.\n\nOne file has been "processed", that one containing the Cleveland database.  All four unprocessed files also exist in this directory.\n\nTo see Test Costs (donated by Peter Turney), please see the folder "Costs" ', 'purpose': None, 'funded_by': None, 'instances_represent': None, 'recommended_data_splits': None, 'sensitive_data': None, 'preprocessing_description': None, 'variable_info': 'Only 14 attributes used:\r\n      1. #3  (age)       \r\n      2. #4  (sex)       \r\n      3. #9  (cp)        \r\n      4. #10 (trestbps)  \r\n      5. #12 (chol)      \r\n      6. #16 (fbs)       \r\n      7. #19 (restecg)   \r\n      8. #32 (thalach)   \r\n      9. #38 (exang)     \r\n      10. #40 (oldpeak)   \r\n      11. #41 (slope)     \r\n      12. #44 (ca)        \r\n      13. #51 (thal)      \r\n      14. #58 (num)       (the predicted attribute)\r\n\r\nComplete attribute documentation:\r\n      1 id: patient identification number\r\n      2 ccf: social security number (I replaced this with a dummy value of 0)\r\n      3 age: age in years\r\n      4 sex: sex (1 = male; 0 = female)\r\n      5 painloc: chest pain location (1 = substernal; 0 = otherwise)\r\n      6 painexer (1 = provoked by exertion; 0 = otherwise)\r\n      7 relrest (1 = relieved after rest; 0 = otherwise)\r\n      8 pncaden (sum of 5, 6, and 7)\r\n      9 cp: chest pain type\r\n        -- Value 1: typical angina\r\n        -- Value 2: atypical angina\r\n        -- Value 3: non-anginal pain\r\n        -- Value 4: asymptomatic\r\n     10 trestbps: resting blood pressure (in mm Hg on admission to the hospital)\r\n     11 htn\r\n     12 chol: serum cholestoral in mg/dl\r\n     13 smoke: I believe this is 1 = yes; 0 = no (is or is not a smoker)\r\n     14 cigs (cigarettes per day)\r\n     15 years (number of years as a smoker)\r\n     16 fbs: (fasting blood sugar &gt; 120 mg/dl)  (1 = true; 0 = false)\r\n     17 dm (1 = history of diabetes; 0 = no such history)\r\n     18 famhist: family history of coronary artery disease (1 = yes; 0 = no)\r\n     19 restecg: resting electrocardiographic results\r\n        -- Value 0: normal\r\n        -- Value 1: having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of &gt; 0.05 mV)\r\n        -- Value 2: showing probable or definite left ventricular hypertrophy by Estes\' criteria\r\n     20 ekgmo (month of exercise ECG reading)\r\n     21 ekgday(day of exercise ECG reading)\r\n     22 ekgyr (year of exercise ECG reading)\r\n     23 dig (digitalis used furing exercise ECG: 1 = yes; 0 = no)\r\n     24 prop (Beta blocker used during exercise ECG: 1 = yes; 0 = no)\r\n     25 nitr (nitrates used during exercise ECG: 1 = yes; 0 = no)\r\n     26 pro (calcium channel blocker used during exercise ECG: 1 = yes; 0 = no)\r\n     27 diuretic (diuretic used used during exercise ECG: 1 = yes; 0 = no)\r\n     28 proto: exercise protocol\r\n          1 = Bruce     \r\n          2 = Kottus\r\n          3 = McHenry\r\n          4 = fast Balke\r\n          5 = Balke\r\n          6 = Noughton \r\n          7 = bike 150 kpa min/min  (Not sure if "kpa min/min" is what was written!)\r\n          8 = bike 125 kpa min/min  \r\n          9 = bike 100 kpa min/min\r\n         10 = bike 75 kpa min/min\r\n         11 = bike 50 kpa min/min\r\n         12 = arm ergometer\r\n     29 thaldur: duration of exercise test in minutes\r\n     30 thaltime: time when ST measure depression was noted\r\n     31 met: mets achieved\r\n     32 thalach: maximum heart rate achieved\r\n     33 thalrest: resting heart rate\r\n     34 tpeakbps: peak exercise blood pressure (first of 2 parts)\r\n     35 tpeakbpd: peak exercise blood pressure (second of 2 parts)\r\n     36 dummy\r\n     37 trestbpd: resting blood pressure\r\n     38 exang: exercise induced angina (1 = yes; 0 = no)\r\n     39 xhypo: (1 = yes; 0 = no)\r\n     40 oldpeak = ST depression induced by exercise relative to rest\r\n     41 slope: the slope of the peak exercise ST segment\r\n        -- Value 1: upsloping\r\n        -- Value 2: flat\r\n        -- Value 3: downsloping\r\n     42 rldv5: height at rest\r\n     43 rldv5e: height at peak exercise\r\n     44 ca: number of major vessels (0-3) colored by flourosopy\r\n     45 restckm: irrelevant\r\n     46 exerckm: irrelevant\r\n     47 restef: rest raidonuclid (sp?) ejection fraction\r\n     48 restwm: rest wall (sp?) motion abnormality\r\n        0 = none\r\n        1 = mild or moderate\r\n        2 = moderate or severe\r\n        3 = akinesis or dyskmem (sp?)\r\n     49 exeref: exercise radinalid (sp?) ejection fraction\r\n     50 exerwm: exercise wall (sp?) motion \r\n     51 thal: 3 = normal; 6 = fixed defect; 7 = reversable defect\r\n     52 thalsev: not used\r\n     53 thalpul: not used\r\n     54 earlobe: not used\r\n     55 cmo: month of cardiac cath (sp?)  (perhaps "call")\r\n     56 cday: day of cardiac cath (sp?)\r\n     57 cyr: year of cardiac cath (sp?)\r\n     58 num: diagnosis of heart disease (angiographic disease status)\r\n        -- Value 0: &lt; 50% diameter narrowing\r\n        -- Value 1: &gt; 50% diameter narrowing\r\n        (in any major vessel: attributes 59 through 68 are vessels)\r\n     59 lmt\r\n     60 ladprox\r\n     61 laddist\r\n     62 diag\r\n     63 cxmain\r\n     64 ramus\r\n     65 om1\r\n     66 om2\r\n     67 rcaprox\r\n     68 rcadist\r\n     69 lvx1: not used\r\n     70 lvx2: not used\r\n     71 lvx3: not used\r\n     72 lvx4: not used\r\n     73 lvf: not used\r\n     74 cathef: not used\r\n     75 junk: not used\r\n     76 name: last name of patient  (I replaced this with the dummy string "name")', 'citation': None}}
-        name     role         type demographic  \
-0        age  Feature      Integer         Age   
-1        sex  Feature  Categorical         Sex   
-2         cp  Feature  Categorical        None   
-3   trestbps  Feature      Integer        None   
-4       chol  Feature      Integer        None   
-5        fbs  Feature  Categorical        None   
-6    restecg  Feature  Categorical        None   
-7    thalach  Feature      Integer        None   
-8      exang  Feature  Categorical        None   
-9    oldpeak  Feature      Integer        None   
-10     slope  Feature  Categorical        None   
-11        ca  Feature      Integer        None   
-12      thal  Feature  Categorical        None   
-13       num   Target      Integer        None   
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-                                          description  units missing_values  
-0                                                None  years             no  
-1                                                None   None             no  
-2                                                None   None             no  
-3   resting blood pressure (on admission to the ho...  mm Hg             no  
-4                                   serum cholestoral  mg/dl             no  
-5                     fasting blood sugar &gt; 120 mg/dl   None             no  
-6                                                None   None             no  
-7                         maximum heart rate achieved   None             no  
-8                             exercise induced angina   None             no  
-9   ST depression induced by exercise relative to ...   None             no  
-10                                               None   None             no  
-11  number of major vessels (0-3) colored by flour...   None            yes  
-12                                               None   None            yes  
-13                         diagnosis of heart disease   None             no  
-</pre>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Time</th>
+<th>V1</th>
+<th>V2</th>
+<th>V3</th>
+<th>V4</th>
+<th>V5</th>
+<th>V6</th>
+<th>V7</th>
+<th>V8</th>
+<th>V9</th>
+<th>...</th>
+<th>V21</th>
+<th>V22</th>
+<th>V23</th>
+<th>V24</th>
+<th>V25</th>
+<th>V26</th>
+<th>V27</th>
+<th>V28</th>
+<th>Amount</th>
+<th>Class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>0.0</td>
+<td>-1.359807</td>
+<td>-0.072781</td>
+<td>2.536347</td>
+<td>1.378155</td>
+<td>-0.338321</td>
+<td>0.462388</td>
+<td>0.239599</td>
+<td>0.098698</td>
+<td>0.363787</td>
+<td>...</td>
+<td>-0.018307</td>
+<td>0.277838</td>
+<td>-0.110474</td>
+<td>0.066928</td>
+<td>0.128539</td>
+<td>-0.189115</td>
+<td>0.133558</td>
+<td>-0.021053</td>
+<td>149.62</td>
+<td>0</td>
+</tr>
+<tr>
+<th>1</th>
+<td>0.0</td>
+<td>1.191857</td>
+<td>0.266151</td>
+<td>0.166480</td>
+<td>0.448154</td>
+<td>0.060018</td>
+<td>-0.082361</td>
+<td>-0.078803</td>
+<td>0.085102</td>
+<td>-0.255425</td>
+<td>...</td>
+<td>-0.225775</td>
+<td>-0.638672</td>
+<td>0.101288</td>
+<td>-0.339846</td>
+<td>0.167170</td>
+<td>0.125895</td>
+<td>-0.008983</td>
+<td>0.014724</td>
+<td>2.69</td>
+<td>0</td>
+</tr>
+<tr>
+<th>2</th>
+<td>1.0</td>
+<td>-1.358354</td>
+<td>-1.340163</td>
+<td>1.773209</td>
+<td>0.379780</td>
+<td>-0.503198</td>
+<td>1.800499</td>
+<td>0.791461</td>
+<td>0.247676</td>
+<td>-1.514654</td>
+<td>...</td>
+<td>0.247998</td>
+<td>0.771679</td>
+<td>0.909412</td>
+<td>-0.689281</td>
+<td>-0.327642</td>
+<td>-0.139097</td>
+<td>-0.055353</td>
+<td>-0.059752</td>
+<td>378.66</td>
+<td>0</td>
+</tr>
+<tr>
+<th>3</th>
+<td>1.0</td>
+<td>-0.966272</td>
+<td>-0.185226</td>
+<td>1.792993</td>
+<td>-0.863291</td>
+<td>-0.010309</td>
+<td>1.247203</td>
+<td>0.237609</td>
+<td>0.377436</td>
+<td>-1.387024</td>
+<td>...</td>
+<td>-0.108300</td>
+<td>0.005274</td>
+<td>-0.190321</td>
+<td>-1.175575</td>
+<td>0.647376</td>
+<td>-0.221929</td>
+<td>0.062723</td>
+<td>0.061458</td>
+<td>123.50</td>
+<td>0</td>
+</tr>
+<tr>
+<th>4</th>
+<td>2.0</td>
+<td>-1.158233</td>
+<td>0.877737</td>
+<td>1.548718</td>
+<td>0.403034</td>
+<td>-0.407193</td>
+<td>0.095921</td>
+<td>0.592941</td>
+<td>-0.270533</td>
+<td>0.817739</td>
+<td>...</td>
+<td>-0.009431</td>
+<td>0.798278</td>
+<td>-0.137458</td>
+<td>0.141267</td>
+<td>-0.206010</td>
+<td>0.502292</td>
+<td>0.219422</td>
+<td>0.215153</td>
+<td>69.99</td>
+<td>0</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>284802</th>
+<td>172786.0</td>
+<td>-11.881118</td>
+<td>10.071785</td>
+<td>-9.834783</td>
+<td>-2.066656</td>
+<td>-5.364473</td>
+<td>-2.606837</td>
+<td>-4.918215</td>
+<td>7.305334</td>
+<td>1.914428</td>
+<td>...</td>
+<td>0.213454</td>
+<td>0.111864</td>
+<td>1.014480</td>
+<td>-0.509348</td>
+<td>1.436807</td>
+<td>0.250034</td>
+<td>0.943651</td>
+<td>0.823731</td>
+<td>0.77</td>
+<td>0</td>
+</tr>
+<tr>
+<th>284803</th>
+<td>172787.0</td>
+<td>-0.732789</td>
+<td>-0.055080</td>
+<td>2.035030</td>
+<td>-0.738589</td>
+<td>0.868229</td>
+<td>1.058415</td>
+<td>0.024330</td>
+<td>0.294869</td>
+<td>0.584800</td>
+<td>...</td>
+<td>0.214205</td>
+<td>0.924384</td>
+<td>0.012463</td>
+<td>-1.016226</td>
+<td>-0.606624</td>
+<td>-0.395255</td>
+<td>0.068472</td>
+<td>-0.053527</td>
+<td>24.79</td>
+<td>0</td>
+</tr>
+<tr>
+<th>284804</th>
+<td>172788.0</td>
+<td>1.919565</td>
+<td>-0.301254</td>
+<td>-3.249640</td>
+<td>-0.557828</td>
+<td>2.630515</td>
+<td>3.031260</td>
+<td>-0.296827</td>
+<td>0.708417</td>
+<td>0.432454</td>
+<td>...</td>
+<td>0.232045</td>
+<td>0.578229</td>
+<td>-0.037501</td>
+<td>0.640134</td>
+<td>0.265745</td>
+<td>-0.087371</td>
+<td>0.004455</td>
+<td>-0.026561</td>
+<td>67.88</td>
+<td>0</td>
+</tr>
+<tr>
+<th>284805</th>
+<td>172788.0</td>
+<td>-0.240440</td>
+<td>0.530483</td>
+<td>0.702510</td>
+<td>0.689799</td>
+<td>-0.377961</td>
+<td>0.623708</td>
+<td>-0.686180</td>
+<td>0.679145</td>
+<td>0.392087</td>
+<td>...</td>
+<td>0.265245</td>
+<td>0.800049</td>
+<td>-0.163298</td>
+<td>0.123205</td>
+<td>-0.569159</td>
+<td>0.546668</td>
+<td>0.108821</td>
+<td>0.104533</td>
+<td>10.00</td>
+<td>0</td>
+</tr>
+<tr>
+<th>284806</th>
+<td>172792.0</td>
+<td>-0.533413</td>
+<td>-0.189733</td>
+<td>0.703337</td>
+<td>-0.506271</td>
+<td>-0.012546</td>
+<td>-0.649617</td>
+<td>1.577006</td>
+<td>-0.414650</td>
+<td>0.486180</td>
+<td>...</td>
+<td>0.261057</td>
+<td>0.643078</td>
+<td>0.376777</td>
+<td>0.008797</td>
+<td>-0.473649</td>
+<td>-0.818267</td>
+<td>-0.002415</td>
+<td>0.013649</td>
+<td>217.00</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>284807 rows × 31 columns</p>
 </div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=7397e328">
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=1ac5da66">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy for="cell-4">
@@ -1214,21 +1500,17 @@ print(heart_disease.variables) </div>
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">heart_disease</span><span class="p">[</span><span class="s2">"data"</span><span class="p">][</span><span class="s2">"original"</span><span class="p">])</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">### Deletar dados_kaggle para não manter localmente</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">shutil</span>
+
+<span class="n">shutil</span><span class="o">.</span><span class="n">rmtree</span><span class="p">(</span><span class="s2">"./dados_kaggle"</span><span class="p">)</span> 
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-4">type(heart_disease["data"]["original"])</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>pandas.core.frame.DataFrame</pre>
+<div class="clipboard-copy-txt" id="cell-4">### Deletar dados_kaggle para não manter localmente
+
+import shutil
+
+shutil.rmtree("./dados_kaggle") </div>
 </div>
 </div>
 </div>
